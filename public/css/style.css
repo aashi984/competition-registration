@@ -1,0 +1,138 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(145deg, #1f1c2c, #1c1540); /* Tamilfans-like deep purple */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed from center to top-align */
+    position: relative;
+    overflow-x: hidden; /* Allow vertical scrolling only */
+}
+
+
+/* Container */
+.form-container {
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 60px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 100%;
+}
+
+/* Title */
+h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Input Fields and Select Dropdowns */
+form input,
+form select {
+    width: 100%;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 13px;
+    transition: border-color 0.2s ease;
+}
+
+/* Focus Styling */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #000000;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Submit Button */
+/* Submit Button */
+button[type="submit"] {
+    background: linear-gradient(135deg, #28a745, #218838); /* Smooth green gradient */
+    color: rgb(1, 29, 15);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Alerts */
+.alert {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Email Error Text */
+.email-error {
+    color: red;
+    font-size: 13px;
+    margin-top: -6px;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        max-width: none;
+    }
+
+    form input,
+    form select {
+        padding: 6px 8px;
+    }
+
+    button[type="register"] {
+        padding: 10px;
+    }
+}
